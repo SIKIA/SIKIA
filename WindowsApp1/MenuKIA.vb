@@ -21,106 +21,60 @@ Public Class MenuKIA
 
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
         Call tampilPasien()
-
     End Sub
 
     Sub tampilPasien()
         Call koneksi()
         Dim table As New DataTable()
-        adapter = New MySqlDataAdapter("select * from pasien", conn)
+        adapter = New MySqlDataAdapter("select a.NO_RM as 'NO. RM', a.NAMA_PAS as NAMA, b.TGL as 'TGL KUNJUNGAN', a.JK as 'JENIS KELAMIN', TIMESTAMPDIFF(YEAR, a.TANGGAL_LAHIR, CURRENT_DATE) AS USIA, a.ALAMAT from pasien a, pelayanan b where a.NO_RM = b.NO_RM and b.POLI = 'Poli KIA'", conn)
         adapter.Fill(table)
         tabelPasien.DataSource = table
-        'Call aturDGV()
     End Sub
-
-    Sub aturDGV()
-        Dim btnBukaFile As New DataGridViewButtonColumn()
-        tabelPasien.Columns.Add(btnBukaFile)
-        btnBukaFile.Width = 80
-        btnBukaFile.HeaderText = "Buka File"
-        btnBukaFile.Text = "Buka File"
-        btnBukaFile.Name = "btnBukaFile"
-        btnBukaFile.UseColumnTextForButtonValue = True
-        tabelPasien.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        tabelPasien.MultiSelect = False
+    Sub tampilObat()
+        Call koneksi()
+        Dim table As New DataTable()
+        adapter = New MySqlDataAdapter("select id_obat as 'ID OBAT', nama_obat as 'NAMA OBAT' from obat", conn)
+        adapter.Fill(table)
+        tabelObat.DataSource = table
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Call koneksi()
         Dim table As New DataTable()
-        If noRM.Text IsNot "" And nama.Text IsNot "" Then
-            cmd = New MySqlCommand("select * from pasien join pelayanan where pasien.NO_RM = pelayanan.NO_RM and pasien.NO_RM = '" & noRM.Text & "' and pasien.NAMA_PAS = '" & nama.Text & "' and pelayanan.TGL = @tgl", conn)
-            cmd.Parameters.Add("tgl", MySqlDbType.Date).Value = tanggal.Value
-            adapter = New MySqlDataAdapter(cmd)
-            adapter.Fill(table)
-            If table.Rows.Count() <= 0 Then
-                MessageBox.Show("Data Tidak ditemuka")
-            Else
-                adapter.Fill(table)
-                tabelPasien.DataSource = table
-            End If
-        ElseIf nama.Text IsNot "" Then
-            cmd = New MySqlCommand("select * from pasien join pelayanan where pasien.NO_RM = pelayanan.NO_RM and pasien.NAMA_PAS = '" & nama.Text & "' and pelayanan.TGL =  @tgl", conn)
-            cmd.Parameters.Add("tgl", MySqlDbType.Date).Value = tanggal.Value
-            adapter = New MySqlDataAdapter(cmd)
-            adapter.Fill(table)
-            If table.Rows.Count() <= 0 Then
-                MessageBox.Show("Data Tidak ditemukan nama")
-            Else
-                adapter.Fill(table)
-                tabelPasien.DataSource = table
-            End If
-            'ElseIf nama IsNot Nothing And noRM IsNot Nothing Then
-            '   adapter = New MySqlDataAdapter("select * from pasien join pelayanan where pasien.NO_RM = pelayanan.NO_RM and pasien.NAMA_PAS = '" & nama.Text & "' and pasien.NO_RM = '" & noRM.Text & "'", conn)
-            '   adapter.Fill(table)
-            '   If table.Rows.Count() <= 0 Then
-            '   MessageBox.Show("Data Tidak ditemukan")
-            'Else
-            '   adapter.Fill(table)
-            '   tabelPasien.DataSource = table
-            'End If
-        ElseIf noRM.Text IsNot "" Then
-            cmd = New MySqlCommand("select * from pasien join pelayanan where pasien.NO_RM = pelayanan.NO_RM and pasien.NO_RM = '" & noRM.Text & "' and pelayanan.TGL =  @tgl", conn)
-            cmd.Parameters.Add("tgl", MySqlDbType.Date).Value = tanggal.Value
-            adapter = New MySqlDataAdapter(cmd)
-            adapter.Fill(table)
-            If table.Rows.Count() <= 0 Then
-                MessageBox.Show("Data Tidak ditemukan norm")
-            Else
-                adapter.Fill(table)
-                tabelPasien.DataSource = table
-            End If
-            'ElseIf nama IsNot Nothing Then
-            '   adapter = New MySqlDataAdapter("select * from pasien join pelayanan where pasien.NO_RM = pelayanan.NO_RM and pasien.NAMA_PAS = '" & nama.Text & "'", conn)
-            '   adapter.Fill(table)
-            'If table.Rows.Count() <= 0 Then
-            '   MessageBox.Show("Data Tidak ditemukan")
-            'Else
-            '   adapter.Fill(table)
-            '   tabelPasien.DataSource = table
-            'End If
-        Else
-            cmd = New MySqlCommand("select * from pasien join pelayanan where pasien.NO_RM = pelayanan.NO_RM and pelayanan.TGL =  @tgl", conn)
-            cmd.Parameters.Add("tgl", MySqlDbType.Date).Value = tanggal.Value
-            adapter = New MySqlDataAdapter(cmd)
-            adapter.Fill(table)
-            If table.Rows.Count() <= 0 Then
-                MessageBox.Show("Data Tidak ditemukan")
-            Else
-                adapter.Fill(table)
-                tabelPasien.DataSource = table
-            End If
-            'ElseIf noRM IsNot Nothing Then
-            '   adapter = New MySqlDataAdapter("select * from pasien join pelayanan where pasien.NO_RM = pelayanan.NO_RM and pasien.NO_RM = '" & noRM.Text & "'", conn)
-            '   adapter.Fill(table)
-            '   If table.Rows.Count() <= 0 Then
-            '   MessageBox.Show("Data Tidak ditemukan")
-            'Else
-            '    adapter.Fill(table)
-            '   tabelPasien.DataSource = table
-            'End If
-            'Else
-            '    MessageBox.Show("Tidak ada data yang dicari")
-        End If
+        adapter = New MySqlDataAdapter("select a.NO_RM as 'NO. RM', a.NAMA_PAS as NAMA, b.TGL as 'TGL KUNJUNGAN', a.JK as 'JENIS KELAMIN', TIMESTAMPDIFF(YEAR, a.TANGGAL_LAHIR, CURRENT_DATE) AS USIA, a.ALAMAT from pasien a, pelayanan b where a.NO_RM = b.NO_RM and b.POLI = 'Poli KIA'", conn)
+        adapter.Fill(table)
+        Dim DV As New DataView(table)
+        DV.RowFilter = String.Format("`no. rm` like '%{0}%' and nama like '%{1}%' and `tgl kunjungan` = '" + tanggal.Value.Date + "' ", noRM.Text, nama.Text)
+        tabelPasien.DataSource = DV
+    End Sub
+
+    Private Sub tabelPasien_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles tabelPasien.CellContentDoubleClick
+        session_NO_RM = tabelPasien.CurrentRow.Cells(0).Value.ToString()
+        Dim session_TGL1 As Date = Convert.ToDateTime(tabelPasien.CurrentRow.Cells(2).Value.ToString())
+        session_TGL = Format(session_TGL1, "yyyy-MM-dd")
+
+        FormulirRekamMedis.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Call koneksi()
+        Dim table As New DataTable()
+        adapter = New MySqlDataAdapter("select id_obat as 'ID OBAT', nama_obat as 'NAMA OBAT' from obat", conn)
+        adapter.Fill(table)
+        Dim DV As New DataView(table)
+        DV.RowFilter = String.Format("`id obat` like '%{0}%' and `nama obat` like '%{1}%'", idObat.Text, namaObat.Text)
+        tabelObat.DataSource = DV
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+        Call tampilObat()
+    End Sub
+
+    Private Sub KeluarToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles KeluarToolStripMenuItem1.Click
+        session_user = ""
+        session_level = ""
+        session_poli = ""
+        Login.Show()
+        Me.Close()
     End Sub
 End Class

@@ -30,13 +30,14 @@ Partial Class MenuKIA
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.KeluarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.tabelObat = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.namaObat = New System.Windows.Forms.TextBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.idObat = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.tanggal = New System.Windows.Forms.DateTimePicker()
         Me.tabelPasien = New System.Windows.Forms.DataGridView()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -47,10 +48,9 @@ Partial Class MenuKIA
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.tanggal = New System.Windows.Forms.DateTimePicker()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tabelObat, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.tabelPasien, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
@@ -104,7 +104,7 @@ Partial Class MenuKIA
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.DataGridView1)
+        Me.Panel1.Controls.Add(Me.tabelObat)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.namaObat)
         Me.Panel1.Controls.Add(Me.Button4)
@@ -116,13 +116,14 @@ Partial Class MenuKIA
         Me.Panel1.TabIndex = 13
         Me.Panel1.Visible = False
         '
-        'DataGridView1
+        'tabelObat
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(188, 129)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(418, 223)
-        Me.DataGridView1.TabIndex = 18
+        Me.tabelObat.AllowUserToOrderColumns = True
+        Me.tabelObat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.tabelObat.Location = New System.Drawing.Point(188, 121)
+        Me.tabelObat.Name = "tabelObat"
+        Me.tabelObat.Size = New System.Drawing.Size(418, 274)
+        Me.tabelObat.TabIndex = 18
         '
         'Label2
         '
@@ -184,12 +185,22 @@ Partial Class MenuKIA
         Me.Panel2.Size = New System.Drawing.Size(798, 413)
         Me.Panel2.TabIndex = 19
         '
+        'tanggal
+        '
+        Me.tanggal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.tanggal.Location = New System.Drawing.Point(326, 95)
+        Me.tanggal.Name = "tanggal"
+        Me.tanggal.Size = New System.Drawing.Size(224, 20)
+        Me.tanggal.TabIndex = 26
+        Me.tanggal.Value = New Date(2019, 10, 9, 22, 53, 15, 0)
+        '
         'tabelPasien
         '
         Me.tabelPasien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.tabelPasien.Location = New System.Drawing.Point(154, 139)
+        Me.tabelPasien.Location = New System.Drawing.Point(85, 129)
         Me.tabelPasien.Name = "tabelPasien"
-        Me.tabelPasien.Size = New System.Drawing.Size(494, 253)
+        Me.tabelPasien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.tabelPasien.Size = New System.Drawing.Size(629, 266)
         Me.tabelPasien.TabIndex = 25
         '
         'Label3
@@ -281,34 +292,25 @@ Partial Class MenuKIA
         Me.Button2.Text = "LAPORAN KUNJUNGAN"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'tanggal
-        '
-        Me.tanggal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.tanggal.Location = New System.Drawing.Point(326, 95)
-        Me.tanggal.Name = "tanggal"
-        Me.tanggal.Size = New System.Drawing.Size(224, 20)
-        Me.tanggal.TabIndex = 26
-        Me.tanggal.Value = New Date(2019, 10, 9, 22, 53, 15, 0)
-        '
         'MenuKIA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "MenuKIA"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Menu Obat"
+        Me.Text = "Menu KIA"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tabelObat, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.tabelPasien, System.ComponentModel.ISupportInitialize).EndInit()
@@ -326,7 +328,7 @@ Partial Class MenuKIA
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents tabelObat As DataGridView
     Friend WithEvents Label2 As Label
     Friend WithEvents namaObat As TextBox
     Friend WithEvents Button4 As Button

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormulirRekamMedis
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,23 +20,23 @@ Partial Class FormulirRekamMedis
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.EDIT = New System.Windows.Forms.Button()
         Me.Rkp = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.NO_RM = New System.Windows.Forms.TextBox()
+        Me.PEKERJAAN = New System.Windows.Forms.TextBox()
+        Me.NIK = New System.Windows.Forms.TextBox()
+        Me.NAMA_KK = New System.Windows.Forms.TextBox()
+        Me.NAMA = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.ANAMNESIS = New System.Windows.Forms.RichTextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -44,58 +44,63 @@ Partial Class FormulirRekamMedis
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.NADI = New System.Windows.Forms.TextBox()
+        Me.BB = New System.Windows.Forms.TextBox()
+        Me.TB = New System.Windows.Forms.TextBox()
+        Me.SB = New System.Windows.Forms.TextBox()
+        Me.TDARAH = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ALERGI = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.AGAMA = New System.Windows.Forms.TextBox()
+        Me.ALAMAT = New System.Windows.Forms.TextBox()
+        Me.NO_BPJS = New System.Windows.Forms.TextBox()
+        Me.TGL_LAHIR = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.KASUS = New System.Windows.Forms.ComboBox()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.RUJUK = New System.Windows.Forms.ComboBox()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.RS = New System.Windows.Forms.ComboBox()
+        Me.CETAK = New System.Windows.Forms.Button()
+        Me.SIMPAN = New System.Windows.Forms.Button()
+        Me.BATAL = New System.Windows.Forms.Button()
+        Me.TAMBAH = New System.Windows.Forms.Button()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
-        Me.TextBox19 = New System.Windows.Forms.TextBox()
-        Me.TextBox20 = New System.Windows.Forms.TextBox()
+        Me.D_BIDAN = New System.Windows.Forms.TextBox()
+        Me.DOSIS = New System.Windows.Forms.TextBox()
+        Me.ICD = New System.Windows.Forms.TextBox()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
+        Me.KIE = New System.Windows.Forms.RichTextBox()
         Me.JK = New System.Windows.Forms.ComboBox()
         Me.Label29 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.GIZI = New System.Windows.Forms.TextBox()
         Me.Label30 = New System.Windows.Forms.Label()
-        Me.RichTextBox3 = New System.Windows.Forms.RichTextBox()
+        Me.TINDAKAN = New System.Windows.Forms.RichTextBox()
+        Me.BIAYA = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.OBAT = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
-        'Button1
+        'EDIT
         '
-        Me.Button1.Location = New System.Drawing.Point(451, 473)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "EDIT"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.EDIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.EDIT.Location = New System.Drawing.Point(451, 473)
+        Me.EDIT.Name = "EDIT"
+        Me.EDIT.Size = New System.Drawing.Size(75, 23)
+        Me.EDIT.TabIndex = 31
+        Me.EDIT.Text = "EDIT"
+        Me.EDIT.UseVisualStyleBackColor = True
         '
         'Rkp
         '
@@ -114,40 +119,45 @@ Partial Class FormulirRekamMedis
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Riwayat Kunjungan Pasien"
         '
-        'TextBox1
+        'NO_RM
         '
-        Me.TextBox1.Location = New System.Drawing.Point(167, 70)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.NO_RM.Location = New System.Drawing.Point(167, 70)
+        Me.NO_RM.Name = "NO_RM"
+        Me.NO_RM.ReadOnly = True
+        Me.NO_RM.Size = New System.Drawing.Size(217, 20)
+        Me.NO_RM.TabIndex = 2
         '
-        'TextBox2
+        'PEKERJAAN
         '
-        Me.TextBox2.Location = New System.Drawing.Point(167, 176)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.PEKERJAAN.Location = New System.Drawing.Point(167, 176)
+        Me.PEKERJAAN.Name = "PEKERJAAN"
+        Me.PEKERJAAN.ReadOnly = True
+        Me.PEKERJAAN.Size = New System.Drawing.Size(217, 20)
+        Me.PEKERJAAN.TabIndex = 7
         '
-        'TextBox4
+        'NIK
         '
-        Me.TextBox4.Location = New System.Drawing.Point(167, 133)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox4.TabIndex = 6
+        Me.NIK.Location = New System.Drawing.Point(167, 133)
+        Me.NIK.Name = "NIK"
+        Me.NIK.ReadOnly = True
+        Me.NIK.Size = New System.Drawing.Size(217, 20)
+        Me.NIK.TabIndex = 5
         '
-        'TextBox5
+        'NAMA_KK
         '
-        Me.TextBox5.Location = New System.Drawing.Point(167, 112)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox5.TabIndex = 7
+        Me.NAMA_KK.Location = New System.Drawing.Point(167, 112)
+        Me.NAMA_KK.Name = "NAMA_KK"
+        Me.NAMA_KK.ReadOnly = True
+        Me.NAMA_KK.Size = New System.Drawing.Size(217, 20)
+        Me.NAMA_KK.TabIndex = 4
         '
-        'TextBox6
+        'NAMA
         '
-        Me.TextBox6.Location = New System.Drawing.Point(167, 91)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox6.TabIndex = 8
+        Me.NAMA.Location = New System.Drawing.Point(167, 91)
+        Me.NAMA.Name = "NAMA"
+        Me.NAMA.ReadOnly = True
+        Me.NAMA.Size = New System.Drawing.Size(217, 20)
+        Me.NAMA.TabIndex = 3
         '
         'Label2
         '
@@ -203,13 +213,13 @@ Partial Class FormulirRekamMedis
         Me.Label7.TabIndex = 14
         Me.Label7.Text = "Pekerjaan"
         '
-        'RichTextBox1
+        'ANAMNESIS
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(167, 216)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(217, 70)
-        Me.RichTextBox1.TabIndex = 15
-        Me.RichTextBox1.Text = ""
+        Me.ANAMNESIS.Location = New System.Drawing.Point(167, 216)
+        Me.ANAMNESIS.Name = "ANAMNESIS"
+        Me.ANAMNESIS.Size = New System.Drawing.Size(217, 70)
+        Me.ANAMNESIS.TabIndex = 13
+        Me.ANAMNESIS.Text = ""
         '
         'Label8
         '
@@ -274,40 +284,40 @@ Partial Class FormulirRekamMedis
         Me.Label15.TabIndex = 24
         Me.Label15.Text = "Tekanan Darah"
         '
-        'TextBox7
+        'NADI
         '
-        Me.TextBox7.Location = New System.Drawing.Point(267, 324)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox7.TabIndex = 23
+        Me.NADI.Location = New System.Drawing.Point(267, 324)
+        Me.NADI.Name = "NADI"
+        Me.NADI.Size = New System.Drawing.Size(117, 20)
+        Me.NADI.TabIndex = 15
         '
-        'TextBox8
+        'BB
         '
-        Me.TextBox8.Location = New System.Drawing.Point(267, 345)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox8.TabIndex = 22
+        Me.BB.Location = New System.Drawing.Point(267, 345)
+        Me.BB.Name = "BB"
+        Me.BB.Size = New System.Drawing.Size(117, 20)
+        Me.BB.TabIndex = 16
         '
-        'TextBox9
+        'TB
         '
-        Me.TextBox9.Location = New System.Drawing.Point(267, 366)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox9.TabIndex = 21
+        Me.TB.Location = New System.Drawing.Point(267, 366)
+        Me.TB.Name = "TB"
+        Me.TB.Size = New System.Drawing.Size(117, 20)
+        Me.TB.TabIndex = 17
         '
-        'TextBox10
+        'SB
         '
-        Me.TextBox10.Location = New System.Drawing.Point(267, 387)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox10.TabIndex = 20
+        Me.SB.Location = New System.Drawing.Point(267, 387)
+        Me.SB.Name = "SB"
+        Me.SB.Size = New System.Drawing.Size(117, 20)
+        Me.SB.TabIndex = 18
         '
-        'TextBox12
+        'TDARAH
         '
-        Me.TextBox12.Location = New System.Drawing.Point(267, 303)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox12.TabIndex = 18
+        Me.TDARAH.Location = New System.Drawing.Point(267, 303)
+        Me.TDARAH.Name = "TDARAH"
+        Me.TDARAH.Size = New System.Drawing.Size(117, 20)
+        Me.TDARAH.TabIndex = 14
         '
         'Label16
         '
@@ -318,13 +328,14 @@ Partial Class FormulirRekamMedis
         Me.Label16.TabIndex = 31
         Me.Label16.Text = "Alergi"
         '
-        'ComboBox2
+        'ALERGI
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(167, 425)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(217, 21)
-        Me.ComboBox2.TabIndex = 30
+        Me.ALERGI.FormattingEnabled = True
+        Me.ALERGI.Items.AddRange(New Object() {"Ada", "Tidak Ada"})
+        Me.ALERGI.Location = New System.Drawing.Point(167, 425)
+        Me.ALERGI.Name = "ALERGI"
+        Me.ALERGI.Size = New System.Drawing.Size(217, 21)
+        Me.ALERGI.TabIndex = 19
         '
         'Label10
         '
@@ -371,40 +382,37 @@ Partial Class FormulirRekamMedis
         Me.Label20.TabIndex = 37
         Me.Label20.Text = "Tanggal Lahir"
         '
-        'TextBox11
+        'AGAMA
         '
-        Me.TextBox11.Location = New System.Drawing.Point(572, 63)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox11.TabIndex = 36
+        Me.AGAMA.Location = New System.Drawing.Point(572, 63)
+        Me.AGAMA.Name = "AGAMA"
+        Me.AGAMA.ReadOnly = True
+        Me.AGAMA.Size = New System.Drawing.Size(217, 20)
+        Me.AGAMA.TabIndex = 9
         '
-        'TextBox13
+        'ALAMAT
         '
-        Me.TextBox13.Location = New System.Drawing.Point(572, 84)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox13.TabIndex = 35
+        Me.ALAMAT.Location = New System.Drawing.Point(572, 84)
+        Me.ALAMAT.Name = "ALAMAT"
+        Me.ALAMAT.ReadOnly = True
+        Me.ALAMAT.Size = New System.Drawing.Size(217, 20)
+        Me.ALAMAT.TabIndex = 10
         '
-        'TextBox14
+        'NO_BPJS
         '
-        Me.TextBox14.Location = New System.Drawing.Point(572, 105)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox14.TabIndex = 34
+        Me.NO_BPJS.Location = New System.Drawing.Point(572, 127)
+        Me.NO_BPJS.Name = "NO_BPJS"
+        Me.NO_BPJS.ReadOnly = True
+        Me.NO_BPJS.Size = New System.Drawing.Size(217, 20)
+        Me.NO_BPJS.TabIndex = 12
         '
-        'TextBox15
+        'TGL_LAHIR
         '
-        Me.TextBox15.Location = New System.Drawing.Point(572, 126)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox15.TabIndex = 33
-        '
-        'TextBox16
-        '
-        Me.TextBox16.Location = New System.Drawing.Point(572, 42)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox16.TabIndex = 32
+        Me.TGL_LAHIR.Location = New System.Drawing.Point(572, 42)
+        Me.TGL_LAHIR.Name = "TGL_LAHIR"
+        Me.TGL_LAHIR.ReadOnly = True
+        Me.TGL_LAHIR.Size = New System.Drawing.Size(217, 20)
+        Me.TGL_LAHIR.TabIndex = 8
         '
         'Label21
         '
@@ -415,13 +423,13 @@ Partial Class FormulirRekamMedis
         Me.Label21.TabIndex = 43
         Me.Label21.Text = "Jenis Kasus"
         '
-        'ComboBox3
+        'KASUS
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(572, 403)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(106, 21)
-        Me.ComboBox3.TabIndex = 42
+        Me.KASUS.FormattingEnabled = True
+        Me.KASUS.Location = New System.Drawing.Point(572, 403)
+        Me.KASUS.Name = "KASUS"
+        Me.KASUS.Size = New System.Drawing.Size(106, 21)
+        Me.KASUS.TabIndex = 28
         '
         'Label22
         '
@@ -432,13 +440,13 @@ Partial Class FormulirRekamMedis
         Me.Label22.TabIndex = 45
         Me.Label22.Text = "Rujuk"
         '
-        'ComboBox4
+        'RUJUK
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(572, 430)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(106, 21)
-        Me.ComboBox4.TabIndex = 44
+        Me.RUJUK.FormattingEnabled = True
+        Me.RUJUK.Location = New System.Drawing.Point(572, 430)
+        Me.RUJUK.Name = "RUJUK"
+        Me.RUJUK.Size = New System.Drawing.Size(106, 21)
+        Me.RUJUK.TabIndex = 29
         '
         'Label23
         '
@@ -449,49 +457,53 @@ Partial Class FormulirRekamMedis
         Me.Label23.TabIndex = 47
         Me.Label23.Text = "Rumah Sakit"
         '
-        'ComboBox5
+        'RS
         '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(772, 403)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(106, 21)
-        Me.ComboBox5.TabIndex = 46
+        Me.RS.FormattingEnabled = True
+        Me.RS.Location = New System.Drawing.Point(772, 403)
+        Me.RS.Name = "RS"
+        Me.RS.Size = New System.Drawing.Size(106, 21)
+        Me.RS.TabIndex = 30
         '
-        'Button2
+        'CETAK
         '
-        Me.Button2.Location = New System.Drawing.Point(532, 473)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 48
-        Me.Button2.Text = "CETAK"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.CETAK.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CETAK.Location = New System.Drawing.Point(532, 473)
+        Me.CETAK.Name = "CETAK"
+        Me.CETAK.Size = New System.Drawing.Size(75, 23)
+        Me.CETAK.TabIndex = 32
+        Me.CETAK.Text = "CETAK"
+        Me.CETAK.UseVisualStyleBackColor = True
         '
-        'Button3
+        'SIMPAN
         '
-        Me.Button3.Location = New System.Drawing.Point(613, 473)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 49
-        Me.Button3.Text = "SIMPAN"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.SIMPAN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SIMPAN.Location = New System.Drawing.Point(613, 473)
+        Me.SIMPAN.Name = "SIMPAN"
+        Me.SIMPAN.Size = New System.Drawing.Size(75, 23)
+        Me.SIMPAN.TabIndex = 33
+        Me.SIMPAN.Text = "SIMPAN"
+        Me.SIMPAN.UseVisualStyleBackColor = True
         '
-        'Button4
+        'BATAL
         '
-        Me.Button4.Location = New System.Drawing.Point(694, 473)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 50
-        Me.Button4.Text = "BATAL"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.BATAL.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BATAL.Location = New System.Drawing.Point(694, 473)
+        Me.BATAL.Name = "BATAL"
+        Me.BATAL.Size = New System.Drawing.Size(75, 23)
+        Me.BATAL.TabIndex = 34
+        Me.BATAL.Text = "BATAL"
+        Me.BATAL.UseVisualStyleBackColor = True
         '
-        'Button5
+        'TAMBAH
         '
-        Me.Button5.Location = New System.Drawing.Point(803, 473)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 51
-        Me.Button5.Text = "TAMBAH"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.TAMBAH.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.TAMBAH.Location = New System.Drawing.Point(803, 473)
+        Me.TAMBAH.Name = "TAMBAH"
+        Me.TAMBAH.Size = New System.Drawing.Size(75, 23)
+        Me.TAMBAH.TabIndex = 35
+        Me.TAMBAH.Text = "TAMBAH"
+        Me.TAMBAH.UseVisualStyleBackColor = True
         '
         'Label24
         '
@@ -529,33 +541,26 @@ Partial Class FormulirRekamMedis
         Me.Label27.TabIndex = 56
         Me.Label27.Text = "Diagnosa ICD 10"
         '
-        'TextBox17
+        'D_BIDAN
         '
-        Me.TextBox17.Location = New System.Drawing.Point(572, 195)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox17.TabIndex = 55
+        Me.D_BIDAN.Location = New System.Drawing.Point(572, 195)
+        Me.D_BIDAN.Name = "D_BIDAN"
+        Me.D_BIDAN.Size = New System.Drawing.Size(217, 20)
+        Me.D_BIDAN.TabIndex = 22
         '
-        'TextBox18
+        'DOSIS
         '
-        Me.TextBox18.Location = New System.Drawing.Point(572, 216)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox18.TabIndex = 54
+        Me.DOSIS.Location = New System.Drawing.Point(572, 238)
+        Me.DOSIS.Name = "DOSIS"
+        Me.DOSIS.Size = New System.Drawing.Size(217, 20)
+        Me.DOSIS.TabIndex = 53
         '
-        'TextBox19
+        'ICD
         '
-        Me.TextBox19.Location = New System.Drawing.Point(572, 237)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox19.TabIndex = 53
-        '
-        'TextBox20
-        '
-        Me.TextBox20.Location = New System.Drawing.Point(572, 174)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox20.TabIndex = 52
+        Me.ICD.Location = New System.Drawing.Point(572, 174)
+        Me.ICD.Name = "ICD"
+        Me.ICD.Size = New System.Drawing.Size(217, 20)
+        Me.ICD.TabIndex = 20
         '
         'Label28
         '
@@ -566,13 +571,13 @@ Partial Class FormulirRekamMedis
         Me.Label28.TabIndex = 61
         Me.Label28.Text = "KIE"
         '
-        'RichTextBox2
+        'KIE
         '
-        Me.RichTextBox2.Location = New System.Drawing.Point(572, 281)
-        Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(217, 42)
-        Me.RichTextBox2.TabIndex = 60
-        Me.RichTextBox2.Text = ""
+        Me.KIE.Location = New System.Drawing.Point(572, 281)
+        Me.KIE.Name = "KIE"
+        Me.KIE.Size = New System.Drawing.Size(217, 42)
+        Me.KIE.TabIndex = 25
+        Me.KIE.Text = ""
         '
         'JK
         '
@@ -581,7 +586,7 @@ Partial Class FormulirRekamMedis
         Me.JK.Location = New System.Drawing.Point(167, 154)
         Me.JK.Name = "JK"
         Me.JK.Size = New System.Drawing.Size(217, 21)
-        Me.JK.TabIndex = 63
+        Me.JK.TabIndex = 6
         '
         'Label29
         '
@@ -592,12 +597,12 @@ Partial Class FormulirRekamMedis
         Me.Label29.TabIndex = 65
         Me.Label29.Text = "Asupan Gizi"
         '
-        'TextBox3
+        'GIZI
         '
-        Me.TextBox3.Location = New System.Drawing.Point(572, 324)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox3.TabIndex = 64
+        Me.GIZI.Location = New System.Drawing.Point(572, 324)
+        Me.GIZI.Name = "GIZI"
+        Me.GIZI.Size = New System.Drawing.Size(217, 20)
+        Me.GIZI.TabIndex = 26
         '
         'Label30
         '
@@ -608,13 +613,80 @@ Partial Class FormulirRekamMedis
         Me.Label30.TabIndex = 67
         Me.Label30.Text = "Tindakan"
         '
-        'RichTextBox3
+        'TINDAKAN
         '
-        Me.RichTextBox3.Location = New System.Drawing.Point(572, 345)
-        Me.RichTextBox3.Name = "RichTextBox3"
-        Me.RichTextBox3.Size = New System.Drawing.Size(217, 42)
-        Me.RichTextBox3.TabIndex = 66
-        Me.RichTextBox3.Text = ""
+        Me.TINDAKAN.Location = New System.Drawing.Point(572, 345)
+        Me.TINDAKAN.Name = "TINDAKAN"
+        Me.TINDAKAN.Size = New System.Drawing.Size(217, 42)
+        Me.TINDAKAN.TabIndex = 27
+        Me.TINDAKAN.Text = ""
+        '
+        'BIAYA
+        '
+        Me.BIAYA.FormattingEnabled = True
+        Me.BIAYA.Items.AddRange(New Object() {"BPJS", "UMUM"})
+        Me.BIAYA.Location = New System.Drawing.Point(572, 105)
+        Me.BIAYA.Name = "BIAYA"
+        Me.BIAYA.Size = New System.Drawing.Size(217, 21)
+        Me.BIAYA.TabIndex = 11
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Lime
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(803, 174)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(29, 20)
+        Me.Button1.TabIndex = 21
+        Me.Button1.Text = "+"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Lime
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(803, 216)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(29, 20)
+        Me.Button2.TabIndex = 24
+        Me.Button2.Text = "+"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(838, 216)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(29, 20)
+        Me.Button3.TabIndex = 71
+        Me.Button3.Text = ">"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(838, 174)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(29, 20)
+        Me.Button4.TabIndex = 72
+        Me.Button4.Text = ">"
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'OBAT
+        '
+        Me.OBAT.FormattingEnabled = True
+        Me.OBAT.Location = New System.Drawing.Point(572, 216)
+        Me.OBAT.Name = "OBAT"
+        Me.OBAT.Size = New System.Drawing.Size(217, 21)
+        Me.OBAT.TabIndex = 23
         '
         'FormulirRekamMedis
         '
@@ -622,70 +694,74 @@ Partial Class FormulirRekamMedis
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(913, 533)
+        Me.Controls.Add(Me.OBAT)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BIAYA)
         Me.Controls.Add(Me.Label30)
-        Me.Controls.Add(Me.RichTextBox3)
+        Me.Controls.Add(Me.TINDAKAN)
         Me.Controls.Add(Me.Label29)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.GIZI)
         Me.Controls.Add(Me.JK)
         Me.Controls.Add(Me.Label28)
-        Me.Controls.Add(Me.RichTextBox2)
+        Me.Controls.Add(Me.KIE)
         Me.Controls.Add(Me.Label24)
         Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.Label26)
         Me.Controls.Add(Me.Label27)
-        Me.Controls.Add(Me.TextBox17)
-        Me.Controls.Add(Me.TextBox18)
-        Me.Controls.Add(Me.TextBox19)
-        Me.Controls.Add(Me.TextBox20)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.D_BIDAN)
+        Me.Controls.Add(Me.DOSIS)
+        Me.Controls.Add(Me.ICD)
+        Me.Controls.Add(Me.TAMBAH)
+        Me.Controls.Add(Me.BATAL)
+        Me.Controls.Add(Me.SIMPAN)
+        Me.Controls.Add(Me.CETAK)
         Me.Controls.Add(Me.Label23)
-        Me.Controls.Add(Me.ComboBox5)
+        Me.Controls.Add(Me.RS)
         Me.Controls.Add(Me.Label22)
-        Me.Controls.Add(Me.ComboBox4)
+        Me.Controls.Add(Me.RUJUK)
         Me.Controls.Add(Me.Label21)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.KASUS)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label20)
-        Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.TextBox13)
-        Me.Controls.Add(Me.TextBox14)
-        Me.Controls.Add(Me.TextBox15)
-        Me.Controls.Add(Me.TextBox16)
+        Me.Controls.Add(Me.AGAMA)
+        Me.Controls.Add(Me.ALAMAT)
+        Me.Controls.Add(Me.NO_BPJS)
+        Me.Controls.Add(Me.TGL_LAHIR)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.ALERGI)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox12)
+        Me.Controls.Add(Me.NADI)
+        Me.Controls.Add(Me.BB)
+        Me.Controls.Add(Me.TB)
+        Me.Controls.Add(Me.SB)
+        Me.Controls.Add(Me.TDARAH)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.ANAMNESIS)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.NAMA)
+        Me.Controls.Add(Me.NAMA_KK)
+        Me.Controls.Add(Me.NIK)
+        Me.Controls.Add(Me.PEKERJAAN)
+        Me.Controls.Add(Me.NO_RM)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Rkp)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.EDIT)
         Me.Name = "FormulirRekamMedis"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Formulir Rekam Medis"
@@ -694,21 +770,21 @@ Partial Class FormulirRekamMedis
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents EDIT As Button
     Friend WithEvents Rkp As ComboBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents NO_RM As TextBox
+    Friend WithEvents PEKERJAAN As TextBox
+    Friend WithEvents NIK As TextBox
+    Friend WithEvents NAMA_KK As TextBox
+    Friend WithEvents NAMA As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents ANAMNESIS As RichTextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label11 As Label
@@ -716,46 +792,50 @@ Partial Class FormulirRekamMedis
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents NADI As TextBox
+    Friend WithEvents BB As TextBox
+    Friend WithEvents TB As TextBox
+    Friend WithEvents SB As TextBox
+    Friend WithEvents TDARAH As TextBox
     Friend WithEvents Label16 As Label
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents ALERGI As ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents AGAMA As TextBox
+    Friend WithEvents ALAMAT As TextBox
+    Friend WithEvents NO_BPJS As TextBox
+    Friend WithEvents TGL_LAHIR As TextBox
     Friend WithEvents Label21 As Label
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents KASUS As ComboBox
     Friend WithEvents Label22 As Label
-    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents RUJUK As ComboBox
     Friend WithEvents Label23 As Label
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents RS As ComboBox
+    Friend WithEvents CETAK As Button
+    Friend WithEvents SIMPAN As Button
+    Friend WithEvents BATAL As Button
+    Friend WithEvents TAMBAH As Button
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents Label26 As Label
     Friend WithEvents Label27 As Label
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents TextBox18 As TextBox
-    Friend WithEvents TextBox19 As TextBox
-    Friend WithEvents TextBox20 As TextBox
+    Friend WithEvents D_BIDAN As TextBox
+    Friend WithEvents DOSIS As TextBox
+    Friend WithEvents ICD As TextBox
     Friend WithEvents Label28 As Label
-    Friend WithEvents RichTextBox2 As RichTextBox
+    Friend WithEvents KIE As RichTextBox
     Friend WithEvents JK As ComboBox
     Friend WithEvents Label29 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents GIZI As TextBox
     Friend WithEvents Label30 As Label
-    Friend WithEvents RichTextBox3 As RichTextBox
+    Friend WithEvents TINDAKAN As RichTextBox
+    Friend WithEvents BIAYA As ComboBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents OBAT As ComboBox
 End Class

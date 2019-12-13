@@ -4,28 +4,36 @@ Public Class Login
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         Call koneksi()
         Dim table As New DataTable()
-        cmd = New MySqlCommand("select * from petugas where USERNAME_P = '" & user.Text & "' and PASSWORD_P = '" & pass.Text & "' and level = '" & session_level & "'", conn)
+        Dim usersess As String
+        If session_level = "user" Then
+            cmd = New MySqlCommand("select * from petugas where USERNAME_P = '" & user.Text & "' and PASSWORD_P = '" & pass.Text & "' and level = 'user' and JENIS_PETUGAS = 'POLI KIA' ", conn)
+        ElseIf session_level = "admin" Then
+            cmd = New MySqlCommand("select * from petugas where USERNAME_P = '" & user.Text & "' and PASSWORD_P = '" & pass.Text & "' and level = 'admin' ", conn)
+        End If
         adapter = New MySqlDataAdapter(cmd)
         adapter.Fill(table)
-
-
+        rd = cmd.ExecuteReader
+        rd.Read()
+        If rd.HasRows Then
+            usersess = rd.Item("ID_PETUGAS")
+            conn.Close()
+            adapter.Dispose()
+        End If
         If table.Rows.Count() <= 0 Then
-            MessageBox.Show("username atau password salah!")
-        ElseIf session_poli = "POLI KIA" And session_level = "user" Then
-            session_user = user.Text
+            If session_poli = "POLI GIGI" Then
+                MessageBox.Show("Menu GIGI belum tersedia!")
+            Else
+                MessageBox.Show("username atau password salah!")
+            End If
+        ElseIf session_poli = "admin" Then
+            session_user = usersess
             MenuKIA.Show()
             Me.Close()
-        ElseIf session_poli = "POLI GIGI" And session_level = "user" Then
-            session_user = user.Text
-            MessageBox.Show("Poli Gigi belum tersedia")
-        ElseIf session_poli = "ADMIN" Then
-            session_user = user.Text
+        Else
+            session_user = usersess
             MenuKIA.Show()
             Me.Close()
         End If
-
-
-
     End Sub
 
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
@@ -36,14 +44,10 @@ Public Class Login
         Panel3.Visible = False
     End Sub
 
-    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         session_level = "admin"
-        Panel2.Visible = True
-        Panel1.Visible = False
+        Panel2.Visible = False
+        Panel1.Visible = True
         Panel3.Visible = False
     End Sub
 
